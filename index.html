@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Card Registration form | INAM ILYAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="logo.jpg" alt="UOK Logo">
+        <p>University of Kotli Azad Jammu & Kashmir</p>
+    </nav>
+    <div class="container">
+        <div class="std-img"><img src="inam.jpg" alt="Student Image"> </div>
+        <div class="hero">
+            <h2 class="border-bottom in-heading">Student Profile</h2>
+            <form action="#" method="post">
+
+                <p class="border-bottom in-heading">Admission Information</p>
+
+                <div class="flex">
+                    <div>
+                        <p>Program * </p>
+                        <select name="program" id="">
+                            <option value="#">-- Select Program --</option>
+                            <option value="BS-IT">BS Information Technology</option>
+                            <option value="BS-SE">BS Software Engineering</option>
+                            <option value="BS-CS">BS Computer Science</option>
+                            <option value="BS-Eng">BS English</option>
+                            <option value="BS-Ur">BS Urdu</option>
+                            <option value="BS-Islamiyat">BS Islamiyat</option>
+                            <option value="BS-DataScience">BS Data Sciece</option>
+                            <option value="BS-Architecture">BS Architecture</option>
+                            <option value="BS-Management">BS Management Sciences</option>
+                            <option value="BS-Math">BS Math</option>
+                            <option value="BS-Tech">BS Biotechnology</option>
+                            <option value="BS-Chemistry">BS Chemistry</option>
+                            <option value="BS-Physics">BS Physics</option>
+                        </select>
+
+                        <p>Roll No * </p>
+                        <input type="number" name="rollNo" placeholder="Enter roll no here" required>
+                    </div>
+
+
+                    <div>
+                        <p>Session * </p>
+                        <select name="session" id="">
+                            <option value="">-- Select Session --</option>
+                            <option value="2018-22">2018-22</option>
+                            <option value="2019-23">2019-23</option>
+                            <option value="2020-24">2020-24</option>
+                            <option value="2021-25">2021-25</option>
+                        </select>
+
+
+
+                        <p>Registration No * </p>
+                        <select name="registrationNo" id="">
+                            <option value="#">--Select--</option>
+                            <option value="appliedfor">Applid for</option>
+                        </select>
+                    </div>
+                </div>
+
+                <p class="border-bottom in-heading">Personal Information</p>
+                <div class="flex">
+                    <div>
+                        <p>Name * </p>
+                        <input type="text" name="name" placeholder="Enter your name" required>
+
+                        <p>CNIC * </p>
+                        <input type="text" name="cnic" placeholder="Enter CNIC" required>
+
+                        <p>Gender * </p>
+                        <select name="gender" id="">
+                            <option value="#">-- Select --</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+
+                    </div>
+
+                    <div>
+                        <p>Father Name * </p>
+                        <input type="text" name="fname" placeholder="Enter father name" required>
+
+                        <p>Date of Birth * </p>
+                        <input type="date" name="dob" required>
+
+                        <p>Merital Status * </p>
+                        <select name="status" id="">
+                            <option value="#">-- Select --</option>
+                            <option value="Married">Married</option>
+                            <option value="Unmarried">Unmarried</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <p>Image * </p>
+                <input type="file" accept=".jpg, .png" required>
+                <small>Max size is 1mb <span>(Passport size, Front facing, White background)</span></small>
+
+                <p class="border-bottom in-heading">Other Information</p>
+                <div class="flex">
+                    <div>
+                        <p>Address *</p>
+                        <input type="text" name="address" placeholder="Enter address" required>
+                        <p>Tehsil *</p>
+                        <input type="text" name="tehsil" required>
+                        <p>Email *</p>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <p>District *</p>
+                        <input type="text" name="district" placeholder="Enter district" required>
+
+                        <p>City/ Village *</p>
+                        <input type="text" name="city" required>
+
+                        <p>Mobile Number *</p>
+                        <input type="number" name="phoneNo" required>
+                    </div>
+
+                </div>
+
+                <div class="flex">
+                    <div class=" mt0">
+                        <p>Blood Group *</p>
+                        <select name="bloodgp" id="">
+                            <option value="#">--Select--</option>
+                            <option value="A">A</option>
+                            <option value="A+">A+</option>
+                            <option value="B">B</option>
+                            <option value="B+">B+</option>
+                            <option value="O+">O+</option>
+                        </select>
+                    </div>
+                    <div class=" mt0">
+                        <p>Disablity *</p>
+                        <select name="disablity" id="">
+                            <option value="#">--Select--</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class=" mt0">
+                        <p>Resident of LOC *</p>
+                        <select name="loc" id="">
+                            <option value="#">--Select--</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="captcha">
+                    <input type="checkbox">
+                    <label for="captcha">I am not a robot</label>
+                </div>
+                <div class="btnbox">
+                    <input type="reset" value="Clear">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy Copyrights Reserved | Inam Ilyas</p>
+    </footer>
+</body>
+
+</html>
